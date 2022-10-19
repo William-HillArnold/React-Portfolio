@@ -3,8 +3,10 @@ import "../styles/Navbar.css";
 
 const styles = {
   navbarStyle: {
+    height: "8em",
     background: "green",
-    justifyContent: "flex",
+    justifyContent: "center",
+    fontSize: "2em",
   },
 };
 
@@ -13,10 +15,12 @@ const styles = {
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <ul style={styles.navbarStyle} className="nav nav-tabs">
-      <li className="nav-item">
-        <a id="profileTitle">William's Portfolio </a>
+      <li className="nav">
+        <a href id="profileTitle">
+          William's Portfolio
+        </a>
       </li>
-      <li className="nav-item">
+      <li className="navbar">
         <a
           href="#aboutme"
           onClick={() => handlePageChange("AboutMe")}
@@ -27,7 +31,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           About Me
         </a>
       </li>
-      <li className="nav-item">
+      <li className="navbar">
         <a
           href="#portfolio"
           onClick={() => handlePageChange("Portfolio")}
@@ -39,7 +43,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           Portfolio
         </a>
       </li>
-      <li className="nav-item">
+      <li className="navbar">
         <a
           href="#contact"
           onClick={() => handlePageChange("Contact")}
@@ -49,7 +53,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           Contact
         </a>
       </li>
-      <li className="nav-item">
+      <li className="navbar">
         <a
           href="#resume"
           onClick={() => handlePageChange("Resume")}

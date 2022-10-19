@@ -1,12 +1,11 @@
-.navbar {
-  background: #6a1b9a;
-  height: 60px;
-}
+li {
+ margin: auto
+ }
 
-.navbar a {
-  color: white;
-  font-size: 3rem;
-  text-decoration: none;
-  margin: 8px;
-  line-height: 3;
+#profileTitle {
+justify-content: center;
+color: black;
+font-style: italic;
+font-size: 2em;
+margin-bottom: 1em;
 }
